@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     height: 100%;
     margin: 0;
-    background: #547031
+    background: #425827
 }
 
 [class*="__container"] {
@@ -37,10 +37,19 @@ header {
     height: 40px;
 }
 
+.logo-cart:hover {
+    border-bottom: .1rem solid var(--main-color);
+	padding-bottom: .5rem;
+}
+
 .navbar-item {
     text-decoration: none;
     color: white;
     margin: 0 10px;
+}
+
+.navbar-item:hover {
+    color: rgb(175, 162, 162);
 }
 
 .burger-menu {
@@ -96,12 +105,19 @@ header {
     background-size: cover;
     min-height: 100vh;
     margin-top: 80px;
+    padding-bottom: 20px;
 }
 
 .home-items {
     padding-top: 300px;
+    padding-bottom: 40px;
     text-align: center;
     margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.home-items p {
+    margin-bottom: 40px;
 }
 
 .button {
@@ -110,9 +126,87 @@ header {
 
 .btn {
     background: green;
+    margin-top: 10px;
     padding: 15px;
     text-decoration: none;
     color: white;
+}
+
+.btn:hover {
+    background: rgb(3, 97, 3);
+}
+
+.title {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.about-block {
+    display: flex;
+    align-items: center;
+    background: #30411c;
+}
+
+.about-img {
+    margin-right: 20px;
+}
+
+
+@media (max-width:1460px) {
+    .about-img img {
+        width:100%;
+        height:auto;
+}
+    .about-block {
+        display: block;
+        justify-content: space-between;
+    }
+}
+
+
+.about-text {
+    text-align: center;
+    color: white;
+}
+
+.about-text-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.box-container {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	gap: 1.5rem;
+}
+
+.box:hover {
+    background: #35471f;
+}
+
+.box {
+    border: 2px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.box-img {
+    width: 300px;
+    height: 300px;
+}
+
+.price {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.price span {
+    font-size: 1.5rem;
+	text-decoration: line-through;
 }
 
 
