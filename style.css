@@ -4,7 +4,7 @@ body {
     font-weight: 400;
     height: 100%;
     margin: 0;
-    background: #425827
+    background: white;
 }
 
 [class*="__container"] {
@@ -18,6 +18,7 @@ header {
     border-bottom: 2px solid black;
     position: fixed;
 	top: 0; left: 0; right: 0;
+    z-index: 1000;
 }
 
 .header__container {
@@ -130,6 +131,8 @@ header {
     padding: 15px;
     text-decoration: none;
     color: white;
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 2px 1px rgba(0, 0, 5, 0.2);
 }
 
 .btn:hover {
@@ -138,7 +141,7 @@ header {
 
 .title {
     text-align: center;
-    color: white;
+    color: green;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 40px;
@@ -184,14 +187,14 @@ header {
 }
 
 .box:hover {
-    background: #35471f;
+    background: #eaece8;
 }
 
 .box {
     border: 2px solid black;
     text-align: center;
     padding-bottom: 20px;
-    color: white;
+    color: green;
 }
 
 .box-img {
@@ -208,6 +211,106 @@ header {
     font-size: 1.5rem;
 	text-decoration: line-through;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(231, 231, 231);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    justify-content: space-around;
+  }
+
+  .comment-text {
+    text-align: center;
+    word-break: break-all;
+  }
+
+  .contact-box {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(233, 233, 233);
+  }
+
+  @media (max-width:565px) {
+    .contact-box {
+        display: block;
+    }
+  }
+
+  .map {
+    width: 100%;
+    height: 400px;
+  }
+
+  form {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  form .btn {
+    border: 0;
+  }
+
+  .inputBox input {
+    width: 19rem;
+    height: 1.9rem;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background: #547031;
+  }
+
+  .share {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+  }
+
+  .share a {
+    margin-right: 150px;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+  
+
+
 
 
 
